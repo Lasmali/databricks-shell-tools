@@ -27,7 +27,7 @@ Set theme in `~/.zshrc`
 ZSH_THEME="databricks-profile"
 ```
 
-Install databricks shell completions
+Install Databricks shell completions
 
 ```bash
 mkdir -p ~/.oh-my-zsh/custom/completions
@@ -36,10 +36,16 @@ databricks completion zsh > ~/.oh-my-zsh/custom/completions/_databricks
 
 ### Usage
 
-Set databricks profile for current session
+Select Databricks profile for current session
 
 > Note: profile needs to be stored in `~/.databrickscfg` file
 
 ```bash
-export DATABRICKS_CONFIG_PROFILE=my_profile
+dps_profiles
+```
+
+Reset Databricks profile
+
+```bash
+dps_reset
 ```

@@ -21,6 +21,12 @@ Add plugin in `~/.zshrc`
 plugins=(... databricks-profile)
 ```
 
+Set theme in `~/.zshrc`
+
+```bash
+ZSH_THEME="databricks-profile"
+```
+
 Install databricks shell completions
 
 ```bash

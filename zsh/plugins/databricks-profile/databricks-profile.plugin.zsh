@@ -1,4 +1,4 @@
-function data_product_prompt_info() {
+function databricks_profile_prompt_info() {
   if [ -z ${DATABRICKS_CONFIG_PROFILE+x} ]; then
     echo ""
   else
@@ -7,12 +7,12 @@ function data_product_prompt_info() {
 }
 
 
-function _data_product_session() {
+function _reset_databricks_profile_session() {
   unset DATABRICKS_CONFIG_PROFILE
-  echo "Databricks config profile unset"
+  echo "Databricks config profile reset"
 }
 
 
 function dps() {
-  _data_product_session
+  _reset_databricks_profile_session
 }

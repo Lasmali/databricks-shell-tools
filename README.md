@@ -10,8 +10,15 @@
 Copy plugin and themes to zsh
 
 ```bash
-cp ./zsh/plugins/data-product/databricks.zsh ~/.oh-my-zsh/custom/plugins/data-product/databricks.zsh
-cp ./zsh/themes/data-product.zsh-theme ~/.oh-my-zsh/custom/themes/data-product.zsh-theme
+mkdir -p ~/.oh-my-zsh/custom/plugins/databricks-profile
+cp ./zsh/plugins/databricks-profile/databricks.zsh ~/.oh-my-zsh/custom/plugins/databricks-profile/databricks.zsh
+cp ./zsh/themes/databricks-profile.zsh-theme ~/.oh-my-zsh/custom/themes/databricks-profile.zsh-theme
+```
+
+Add plugin in `~/.zshrc`
+
+```bash
+plugins=(... databricks-profile)
 ```
 
 Install databricks shell completions
